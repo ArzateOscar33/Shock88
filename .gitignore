@@ -1,0 +1,30 @@
+# ========================================
+# SHOCK 88 - GITIGNORE
+# ========================================
+
+# Configuración local y credenciales
+Config.local.php
+.env
+.env.*
+!.env.example
+
+# Archivos temporales y registros
+*.log
+*.tmp
+*.cache
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configuraciones locales del editor
+.idea/
+.vscode/
+
+# Archivos subidos por usuarios
+/Uploads/*
+!/Uploads/.gitkeep
+
+# Archivos temporales de PHP
+*.swp
+*.swo
