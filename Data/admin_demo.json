@@ -1,0 +1,2429 @@
+{
+  "navigation": [
+    {
+      "group": "GENERAL",
+      "items": [
+        {
+          "slug": "dashboard",
+          "name": "Dashboard",
+          "icon": "fa-chart-line"
+        },
+        {
+          "slug": "reportes",
+          "name": "Reportes",
+          "icon": "fa-chart-pie"
+        }
+      ]
+    },
+    {
+      "group": "CATÁLOGO",
+      "items": [
+        {
+          "slug": "productos",
+          "name": "Productos",
+          "icon": "fa-shirt"
+        },
+        {
+          "slug": "variantes",
+          "name": "Variantes / SKU",
+          "icon": "fa-barcode"
+        },
+        {
+          "slug": "categorias",
+          "name": "Categorías",
+          "icon": "fa-layer-group"
+        },
+        {
+          "slug": "colores",
+          "name": "Colores",
+          "icon": "fa-palette"
+        },
+        {
+          "slug": "tallas",
+          "name": "Tallas",
+          "icon": "fa-ruler"
+        },
+        {
+          "slug": "presentaciones",
+          "name": "Presentaciones",
+          "icon": "fa-box-open"
+        },
+        {
+          "slug": "imagenes",
+          "name": "Imágenes",
+          "icon": "fa-images"
+        }
+      ]
+    },
+    {
+      "group": "INVENTARIO",
+      "items": [
+        {
+          "slug": "sucursales",
+          "name": "Sucursales",
+          "icon": "fa-store"
+        },
+        {
+          "slug": "inventario",
+          "name": "Existencias",
+          "icon": "fa-boxes-stacked"
+        },
+        {
+          "slug": "movimientos",
+          "name": "Movimientos",
+          "icon": "fa-right-left"
+        },
+        {
+          "slug": "importaciones",
+          "name": "Importaciones",
+          "icon": "fa-file-import"
+        }
+      ]
+    },
+    {
+      "group": "VENTAS",
+      "items": [
+        {
+          "slug": "pedidos",
+          "name": "Pedidos",
+          "icon": "fa-receipt"
+        },
+        {
+          "slug": "pagos",
+          "name": "Pagos",
+          "icon": "fa-credit-card"
+        },
+        {
+          "slug": "cancelaciones",
+          "name": "Cancelaciones",
+          "icon": "fa-ban"
+        },
+        {
+          "slug": "reembolsos",
+          "name": "Reembolsos",
+          "icon": "fa-arrow-rotate-left"
+        }
+      ]
+    },
+    {
+      "group": "CLIENTES Y MARKETING",
+      "items": [
+        {
+          "slug": "clientes",
+          "name": "Clientes",
+          "icon": "fa-users"
+        },
+        {
+          "slug": "cupones",
+          "name": "Cupones",
+          "icon": "fa-ticket"
+        },
+        {
+          "slug": "periodos",
+          "name": "Semestres de lealtad",
+          "icon": "fa-calendar-days"
+        },
+        {
+          "slug": "recompensas",
+          "name": "Recompensas",
+          "icon": "fa-gift"
+        },
+        {
+          "slug": "resenas",
+          "name": "Reseñas",
+          "icon": "fa-star"
+        }
+      ]
+    },
+    {
+      "group": "FINANZAS",
+      "items": [
+        {
+          "slug": "gastos",
+          "name": "Gastos",
+          "icon": "fa-money-bill-wave"
+        },
+        {
+          "slug": "gasto-categorias",
+          "name": "Categorías de gasto",
+          "icon": "fa-list"
+        }
+      ]
+    },
+    {
+      "group": "SISTEMA",
+      "items": [
+        {
+          "slug": "usuarios",
+          "name": "Usuarios",
+          "icon": "fa-user-gear"
+        },
+        {
+          "slug": "roles",
+          "name": "Roles",
+          "icon": "fa-shield-halved"
+        },
+        {
+          "slug": "permisos",
+          "name": "Permisos",
+          "icon": "fa-key"
+        },
+        {
+          "slug": "configuracion",
+          "name": "Configuración",
+          "icon": "fa-sliders"
+        },
+        {
+          "slug": "auditoria",
+          "name": "Auditoría",
+          "icon": "fa-clipboard-list"
+        }
+      ]
+    }
+  ],
+  "modules": {
+    "productos": {
+      "slug": "productos",
+      "title": "Productos",
+      "description": "Alta visual, consulta y edición de prendas. Su costo y precio de venta pertenecen a entidades distintas.",
+      "table": "productos + categorias",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "nombre",
+          "label": "Producto"
+        },
+        {
+          "key": "categoria",
+          "label": "Categoría"
+        },
+        {
+          "key": "costo_unitario",
+          "label": "Costo",
+          "fmt": "money"
+        },
+        {
+          "key": "variantes",
+          "label": "Variantes"
+        },
+        {
+          "key": "activo",
+          "label": "Estado",
+          "fmt": "state"
+        }
+      ],
+      "rows": [
+        {
+          "id": 101,
+          "nombre": "Playera Essential Black",
+          "categoria": "Playeras",
+          "categoria_id": 1,
+          "costo_unitario": 175,
+          "variantes": 6,
+          "activo": "Activo"
+        },
+        {
+          "id": 102,
+          "nombre": "Hoodie Shadow Oversize",
+          "categoria": "Sudaderas",
+          "categoria_id": 2,
+          "costo_unitario": 390,
+          "variantes": 5,
+          "activo": "Activo"
+        },
+        {
+          "id": 103,
+          "nombre": "Cargo Street Utility",
+          "categoria": "Pantalones",
+          "categoria_id": 3,
+          "costo_unitario": 330,
+          "variantes": 4,
+          "activo": "Activo"
+        },
+        {
+          "id": 104,
+          "nombre": "Playera Concrete White",
+          "categoria": "Playeras",
+          "categoria_id": 1,
+          "costo_unitario": 180,
+          "variantes": 3,
+          "activo": "Activo"
+        },
+        {
+          "id": 105,
+          "nombre": "Hoodie 88 Menta",
+          "categoria": "Sudaderas",
+          "categoria_id": 2,
+          "costo_unitario": 400,
+          "variantes": 2,
+          "activo": "Inactivo"
+        },
+        {
+          "id": 106,
+          "nombre": "Pantalón Relax Fit",
+          "categoria": "Pantalones",
+          "categoria_id": 3,
+          "costo_unitario": 310,
+          "variantes": 3,
+          "activo": "Activo"
+        }
+      ],
+      "form": [
+        {
+          "key": "nombre",
+          "label": "Nombre de producto",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "categoria_id",
+          "label": "Categoría",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Playeras",
+            "Sudaderas",
+            "Pantalones"
+          ]
+        },
+        {
+          "key": "slug",
+          "label": "Slug (URL)",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "costo_unitario",
+          "label": "Costo unitario (MXN)",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "descripcion",
+          "label": "Descripción",
+          "type": "textarea",
+          "required": true
+        },
+        {
+          "key": "activo",
+          "label": "Estado",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Activo",
+            "Inactivo"
+          ]
+        }
+      ],
+      "readonly": false,
+      "caption": "El precio de venta se administra en Variantes / SKU, no directamente en productos."
+    },
+    "variantes": {
+      "slug": "variantes",
+      "title": "Variantes / SKU",
+      "description": "Cada combinación única de producto, color, talla y presentación mantiene su propio SKU y precio.",
+      "table": "producto_variantes",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "sku",
+          "label": "SKU"
+        },
+        {
+          "key": "producto",
+          "label": "Producto"
+        },
+        {
+          "key": "color",
+          "label": "Color"
+        },
+        {
+          "key": "talla",
+          "label": "Talla"
+        },
+        {
+          "key": "presentacion",
+          "label": "Presentación"
+        },
+        {
+          "key": "precio_venta",
+          "label": "Precio",
+          "fmt": "money"
+        },
+        {
+          "key": "activa",
+          "label": "Estado",
+          "fmt": "state"
+        }
+      ],
+      "rows": [
+        {
+          "id": 501,
+          "sku": "S88-ESS-BLK-M",
+          "producto": "Essential Black",
+          "color": "Negro",
+          "talla": "M",
+          "presentacion": "Regular",
+          "precio_venta": 449,
+          "activa": "Activa"
+        },
+        {
+          "id": 502,
+          "sku": "S88-ESS-BLK-L",
+          "producto": "Essential Black",
+          "color": "Negro",
+          "talla": "L",
+          "presentacion": "Regular",
+          "precio_venta": 449,
+          "activa": "Activa"
+        },
+        {
+          "id": 503,
+          "sku": "S88-HOD-GRY-L",
+          "producto": "Hoodie Shadow",
+          "color": "Gris",
+          "talla": "L",
+          "presentacion": "Oversize",
+          "precio_venta": 899,
+          "activa": "Activa"
+        },
+        {
+          "id": 504,
+          "sku": "S88-CAR-OLV-32",
+          "producto": "Cargo Street",
+          "color": "Oliva",
+          "talla": "32",
+          "presentacion": "Regular",
+          "precio_venta": 799,
+          "activa": "Activa"
+        },
+        {
+          "id": 505,
+          "sku": "S88-HOD-MNT-XL",
+          "producto": "Hoodie 88 Menta",
+          "color": "Menta",
+          "talla": "XL",
+          "presentacion": "Oversize",
+          "precio_venta": 929,
+          "activa": "Inactiva"
+        }
+      ],
+      "form": [
+        {
+          "key": "producto_id",
+          "label": "Producto",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Essential Black",
+            "Hoodie Shadow",
+            "Cargo Street"
+          ]
+        },
+        {
+          "key": "color_id",
+          "label": "Color",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Negro",
+            "Blanco",
+            "Gris",
+            "Oliva",
+            "Menta"
+          ]
+        },
+        {
+          "key": "talla_id",
+          "label": "Talla",
+          "type": "select",
+          "required": true,
+          "options": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "32",
+            "34"
+          ]
+        },
+        {
+          "key": "presentacion_id",
+          "label": "Presentación",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Regular",
+            "Oversize"
+          ]
+        },
+        {
+          "key": "sku",
+          "label": "SKU",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "precio_venta",
+          "label": "Precio de venta (MXN)",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "readonly": false,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    },
+    "categorias": {
+      "slug": "categorias",
+      "title": "Categorías",
+      "description": "Jerarquía principal y subcategorías del escaparate.",
+      "table": "categorias",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "nombre",
+          "label": "Nombre"
+        },
+        {
+          "key": "padre",
+          "label": "Categoría padre"
+        },
+        {
+          "key": "slug",
+          "label": "Slug"
+        },
+        {
+          "key": "activa",
+          "label": "Estado",
+          "fmt": "state"
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "nombre": "Playeras",
+          "padre": "—",
+          "slug": "playeras",
+          "activa": "Activa"
+        },
+        {
+          "id": 2,
+          "nombre": "Sudaderas",
+          "padre": "—",
+          "slug": "sudaderas",
+          "activa": "Activa"
+        },
+        {
+          "id": 3,
+          "nombre": "Pantalones",
+          "padre": "—",
+          "slug": "pantalones",
+          "activa": "Activa"
+        },
+        {
+          "id": 4,
+          "nombre": "Oversize",
+          "padre": "Playeras",
+          "slug": "oversize",
+          "activa": "Activa"
+        },
+        {
+          "id": 5,
+          "nombre": "Cargo",
+          "padre": "Pantalones",
+          "slug": "cargo",
+          "activa": "Activa"
+        }
+      ],
+      "form": [
+        {
+          "key": "nombre",
+          "label": "Nombre",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "padre_id",
+          "label": "Categoría superior",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Sin categoría padre",
+            "Playeras",
+            "Sudaderas",
+            "Pantalones"
+          ]
+        },
+        {
+          "key": "slug",
+          "label": "Slug",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "activa",
+          "label": "Estado",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Activa",
+            "Inactiva"
+          ]
+        }
+      ],
+      "readonly": false,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    },
+    "colores": {
+      "slug": "colores",
+      "title": "Colores",
+      "description": "Colores reutilizables para cada variante.",
+      "table": "colores",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "nombre",
+          "label": "Color"
+        },
+        {
+          "key": "codigo_hex",
+          "label": "Código HEX",
+          "fmt": "color"
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "nombre": "Negro",
+          "codigo_hex": "#111111"
+        },
+        {
+          "id": 2,
+          "nombre": "Blanco",
+          "codigo_hex": "#F8F8F8"
+        },
+        {
+          "id": 3,
+          "nombre": "Gris humo",
+          "codigo_hex": "#6B7280"
+        },
+        {
+          "id": 4,
+          "nombre": "Menta",
+          "codigo_hex": "#63F5D7"
+        },
+        {
+          "id": 5,
+          "nombre": "Oliva",
+          "codigo_hex": "#6E7B52"
+        }
+      ],
+      "form": [
+        {
+          "key": "nombre",
+          "label": "Nombre del color",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "codigo_hex",
+          "label": "Código HEX",
+          "type": "color",
+          "required": true
+        }
+      ],
+      "readonly": false,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    },
+    "tallas": {
+      "slug": "tallas",
+      "title": "Tallas",
+      "description": "Etiquetas reutilizables para prendas y variantes.",
+      "table": "tallas",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "etiqueta",
+          "label": "Talla"
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "etiqueta": "S"
+        },
+        {
+          "id": 2,
+          "etiqueta": "M"
+        },
+        {
+          "id": 3,
+          "etiqueta": "L"
+        },
+        {
+          "id": 4,
+          "etiqueta": "XL"
+        },
+        {
+          "id": 5,
+          "etiqueta": "XXL"
+        },
+        {
+          "id": 6,
+          "etiqueta": "30"
+        },
+        {
+          "id": 7,
+          "etiqueta": "32"
+        },
+        {
+          "id": 8,
+          "etiqueta": "34"
+        }
+      ],
+      "form": [
+        {
+          "key": "etiqueta",
+          "label": "Etiqueta",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "readonly": false,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    },
+    "presentaciones": {
+      "slug": "presentaciones",
+      "title": "Presentaciones",
+      "description": "Presentación de corte o estilo, enlazada a variantes.",
+      "table": "presentaciones",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "nombre",
+          "label": "Presentación"
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "nombre": "Regular"
+        },
+        {
+          "id": 2,
+          "nombre": "Oversize"
+        },
+        {
+          "id": 3,
+          "nombre": "Relaxed fit"
+        }
+      ],
+      "form": [
+        {
+          "key": "nombre",
+          "label": "Nombre",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "readonly": false,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    },
+    "imagenes": {
+      "slug": "imagenes",
+      "title": "Imágenes de producto",
+      "description": "Galerías de productos y variantes; imagen principal y orden visual.",
+      "table": "producto_imagenes",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "producto",
+          "label": "Producto"
+        },
+        {
+          "key": "variante",
+          "label": "Variante"
+        },
+        {
+          "key": "ruta",
+          "label": "Archivo"
+        },
+        {
+          "key": "orden",
+          "label": "Orden"
+        },
+        {
+          "key": "es_principal",
+          "label": "Principal",
+          "fmt": "state"
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "producto": "Essential Black",
+          "variante": "Todas",
+          "ruta": "producto-101-01.jpg",
+          "orden": 1,
+          "es_principal": "Sí"
+        },
+        {
+          "id": 2,
+          "producto": "Essential Black",
+          "variante": "Todas",
+          "ruta": "producto-101-02.jpg",
+          "orden": 2,
+          "es_principal": "No"
+        },
+        {
+          "id": 3,
+          "producto": "Hoodie Shadow",
+          "variante": "GRY-L",
+          "ruta": "producto-102-01.jpg",
+          "orden": 1,
+          "es_principal": "Sí"
+        }
+      ],
+      "form": [
+        {
+          "key": "producto_id",
+          "label": "Producto",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Essential Black",
+            "Hoodie Shadow"
+          ]
+        },
+        {
+          "key": "variante_id",
+          "label": "Variante",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "ruta",
+          "label": "Nombre de archivo",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "texto_alternativo",
+          "label": "Texto alternativo",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "orden",
+          "label": "Orden",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "es_principal",
+          "label": "Principal",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Sí",
+            "No"
+          ]
+        }
+      ],
+      "readonly": false,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    },
+    "sucursales": {
+      "slug": "sucursales",
+      "title": "Sucursales",
+      "description": "Unidades físicas de operación con inventario propio.",
+      "table": "sucursales",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "nombre",
+          "label": "Sucursal"
+        },
+        {
+          "key": "direccion",
+          "label": "Ubicación"
+        },
+        {
+          "key": "activa",
+          "label": "Estado",
+          "fmt": "state"
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "nombre": "Shock 88 — Tijuana",
+          "direccion": "Tijuana, Baja California · dirección por definir",
+          "activa": "Activa"
+        },
+        {
+          "id": 2,
+          "nombre": "Sucursal demo 02",
+          "direccion": "Ubicación de ejemplo",
+          "activa": "Inactiva"
+        }
+      ],
+      "form": [
+        {
+          "key": "nombre",
+          "label": "Nombre",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "direccion",
+          "label": "Dirección",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "activa",
+          "label": "Estado",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Activa",
+            "Inactiva"
+          ]
+        }
+      ],
+      "readonly": false,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    },
+    "inventario": {
+      "slug": "inventario",
+      "title": "Existencias",
+      "description": "Disponibilidad física por sucursal y SKU. Las reservas transitorias se administrarán en lógica de negocio.",
+      "table": "inventario + producto_variantes + sucursales",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "sucursal",
+          "label": "Sucursal"
+        },
+        {
+          "key": "sku",
+          "label": "SKU"
+        },
+        {
+          "key": "producto",
+          "label": "Producto"
+        },
+        {
+          "key": "existencia_fisica",
+          "label": "Existencias",
+          "fmt": "number"
+        },
+        {
+          "key": "nivel",
+          "label": "Nivel",
+          "fmt": "state"
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "sucursal": "Tijuana",
+          "sku": "S88-ESS-BLK-M",
+          "producto": "Essential Black",
+          "existencia_fisica": 22,
+          "nivel": "Disponible"
+        },
+        {
+          "id": 2,
+          "sucursal": "Tijuana",
+          "sku": "S88-HOD-GRY-L",
+          "producto": "Hoodie Shadow",
+          "existencia_fisica": 4,
+          "nivel": "Bajo"
+        },
+        {
+          "id": 3,
+          "sucursal": "Tijuana",
+          "sku": "S88-CAR-OLV-32",
+          "producto": "Cargo Street",
+          "existencia_fisica": 0,
+          "nivel": "Agotado"
+        },
+        {
+          "id": 4,
+          "sucursal": "Tijuana",
+          "sku": "S88-ESS-BLK-L",
+          "producto": "Essential Black",
+          "existencia_fisica": 13,
+          "nivel": "Disponible"
+        }
+      ],
+      "form": [
+        {
+          "key": "sucursal_id",
+          "label": "Sucursal",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Tijuana"
+          ]
+        },
+        {
+          "key": "variante_id",
+          "label": "SKU",
+          "type": "select",
+          "required": true,
+          "options": [
+            "S88-ESS-BLK-M",
+            "S88-ESS-BLK-L",
+            "S88-HOD-GRY-L"
+          ]
+        },
+        {
+          "key": "existencia_fisica",
+          "label": "Existencia física",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "readonly": false,
+      "caption": "La existencia se actualizará mediante movimientos o procesos controlados, no edición libre en producción."
+    },
+    "movimientos": {
+      "slug": "movimientos",
+      "title": "Movimientos de inventario",
+      "description": "Trazabilidad de altas, ajustes, ventas y cancelaciones.",
+      "table": "inventario_movimientos",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "tipo",
+          "label": "Tipo",
+          "fmt": "state"
+        },
+        {
+          "key": "sku",
+          "label": "SKU"
+        },
+        {
+          "key": "cantidad_delta",
+          "label": "Variación",
+          "fmt": "number"
+        },
+        {
+          "key": "motivo",
+          "label": "Motivo"
+        },
+        {
+          "key": "creado_en",
+          "label": "Fecha"
+        }
+      ],
+      "rows": [
+        {
+          "id": 301,
+          "tipo": "ALTA",
+          "sku": "S88-ESS-BLK-M",
+          "cantidad_delta": 30,
+          "motivo": "Entrada inicial",
+          "creado_en": "23 oct 2026"
+        },
+        {
+          "id": 302,
+          "tipo": "VENTA",
+          "sku": "S88-ESS-BLK-M",
+          "cantidad_delta": -2,
+          "motivo": "Pedido SH-1009",
+          "creado_en": "23 oct 2026"
+        },
+        {
+          "id": 303,
+          "tipo": "AJUSTE",
+          "sku": "S88-HOD-GRY-L",
+          "cantidad_delta": -1,
+          "motivo": "Diferencia inventario",
+          "creado_en": "22 oct 2026"
+        }
+      ],
+      "form": [],
+      "readonly": true,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    },
+    "importaciones": {
+      "slug": "importaciones",
+      "title": "Importaciones",
+      "description": "Carga masiva de productos e inventario, con bitácora de errores.",
+      "table": "importaciones (+ importacion_errores)",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "archivo_nombre",
+          "label": "Archivo"
+        },
+        {
+          "key": "tipo",
+          "label": "Tipo"
+        },
+        {
+          "key": "estado",
+          "label": "Estado",
+          "fmt": "state"
+        },
+        {
+          "key": "filas_total",
+          "label": "Filas"
+        },
+        {
+          "key": "filas_ok",
+          "label": "Correctas"
+        },
+        {
+          "key": "filas_error",
+          "label": "Errores"
+        }
+      ],
+      "rows": [
+        {
+          "id": 81,
+          "archivo_nombre": "inventario_octubre.csv",
+          "tipo": "INVENTARIO",
+          "estado": "COMPLETADA",
+          "filas_total": 120,
+          "filas_ok": 120,
+          "filas_error": 0
+        },
+        {
+          "id": 82,
+          "archivo_nombre": "productos_drop01.csv",
+          "tipo": "PRODUCTOS",
+          "estado": "CON_ERRORES",
+          "filas_total": 60,
+          "filas_ok": 57,
+          "filas_error": 3
+        }
+      ],
+      "form": [],
+      "readonly": true,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    },
+    "pedidos": {
+      "slug": "pedidos",
+      "title": "Pedidos",
+      "description": "Control operacional; detalle, pagos, entregas y cancelaciones se consultarán en un expediente.",
+      "table": "pedidos (+ pedido_detalles + pedido_estado_historial)",
+      "columns": [
+        {
+          "key": "folio",
+          "label": "Folio"
+        },
+        {
+          "key": "cliente",
+          "label": "Cliente"
+        },
+        {
+          "key": "canal",
+          "label": "Canal"
+        },
+        {
+          "key": "estado_operativo",
+          "label": "Operativo",
+          "fmt": "state"
+        },
+        {
+          "key": "estado_pago",
+          "label": "Pago",
+          "fmt": "state"
+        },
+        {
+          "key": "estado_entrega",
+          "label": "Entrega",
+          "fmt": "state"
+        },
+        {
+          "key": "total",
+          "label": "Total",
+          "fmt": "money"
+        }
+      ],
+      "rows": [
+        {
+          "folio": "SH-1029",
+          "cliente": "Luis Romero",
+          "canal": "ONLINE",
+          "estado_operativo": "CONFIRMADO",
+          "estado_pago": "APROBADO",
+          "estado_entrega": "PREPARANDO",
+          "total": 1348
+        },
+        {
+          "folio": "SH-1028",
+          "cliente": "Invitado",
+          "canal": "FISICA",
+          "estado_operativo": "CONFIRMADO",
+          "estado_pago": "APROBADO",
+          "estado_entrega": "ENTREGADO",
+          "total": 799
+        },
+        {
+          "folio": "SH-1027",
+          "cliente": "Sofía Morales",
+          "canal": "ONLINE",
+          "estado_operativo": "ABIERTO",
+          "estado_pago": "PENDIENTE",
+          "estado_entrega": "PENDIENTE",
+          "total": 449
+        },
+        {
+          "folio": "SH-1026",
+          "cliente": "Mario López",
+          "canal": "FISICA",
+          "estado_operativo": "CANCELACION_SOLICITADA",
+          "estado_pago": "APROBADO",
+          "estado_entrega": "PENDIENTE",
+          "total": 929
+        }
+      ],
+      "form": [],
+      "readonly": true,
+      "caption": "Un invitado no acumula fidelización. Cancelación total antes de entregar: autorización exclusiva de PROPIETARIO o ADMIN."
+    },
+    "pagos": {
+      "slug": "pagos",
+      "title": "Pagos",
+      "description": "Comprobantes, proveedores y estados. Las transferencias requieren verificación del vendedor.",
+      "table": "pagos (+ pago_eventos)",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "pedido",
+          "label": "Pedido"
+        },
+        {
+          "key": "metodo",
+          "label": "Método"
+        },
+        {
+          "key": "proveedor",
+          "label": "Proveedor"
+        },
+        {
+          "key": "monto",
+          "label": "Monto",
+          "fmt": "money"
+        },
+        {
+          "key": "estado",
+          "label": "Estado",
+          "fmt": "state"
+        },
+        {
+          "key": "verificado",
+          "label": "Verificación"
+        }
+      ],
+      "rows": [
+        {
+          "id": 301,
+          "pedido": "SH-1029",
+          "metodo": "TARJETA",
+          "proveedor": "MERCADOPAGO",
+          "monto": 1348,
+          "estado": "APROBADO",
+          "verificado": "Automática"
+        },
+        {
+          "id": 302,
+          "pedido": "SH-1028",
+          "metodo": "EFECTIVO",
+          "proveedor": "LOCAL",
+          "monto": 799,
+          "estado": "APROBADO",
+          "verificado": "Caja"
+        },
+        {
+          "id": 303,
+          "pedido": "SH-1027",
+          "metodo": "TRANSFERENCIA",
+          "proveedor": "LOCAL",
+          "monto": 449,
+          "estado": "PENDIENTE",
+          "verificado": "Pendiente"
+        }
+      ],
+      "form": [],
+      "readonly": true,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    },
+    "cancelaciones": {
+      "slug": "cancelaciones",
+      "title": "Cancelaciones",
+      "description": "Solicitudes completas de pedido y revisión por responsable autorizado.",
+      "table": "cancelaciones",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "pedido",
+          "label": "Pedido"
+        },
+        {
+          "key": "motivo",
+          "label": "Motivo"
+        },
+        {
+          "key": "estado",
+          "label": "Estado",
+          "fmt": "state"
+        },
+        {
+          "key": "autorizado_por",
+          "label": "Autoriza"
+        },
+        {
+          "key": "creada_en",
+          "label": "Solicitada"
+        }
+      ],
+      "rows": [
+        {
+          "id": 11,
+          "pedido": "SH-1026",
+          "motivo": "Cliente solicita cancelación antes de entrega",
+          "estado": "SOLICITADA",
+          "autorizado_por": "Pendiente",
+          "creada_en": "23 oct 2026"
+        },
+        {
+          "id": 10,
+          "pedido": "SH-1018",
+          "motivo": "Producto no disponible",
+          "estado": "APROBADA",
+          "autorizado_por": "Propietario",
+          "creada_en": "21 oct 2026"
+        }
+      ],
+      "form": [],
+      "readonly": true,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    },
+    "reembolsos": {
+      "slug": "reembolsos",
+      "title": "Reembolsos",
+      "description": "Seguimiento financiero de devoluciones asociadas a cancelación y pago.",
+      "table": "reembolsos",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "cancelacion_id",
+          "label": "Cancelación"
+        },
+        {
+          "key": "pago_id",
+          "label": "Pago"
+        },
+        {
+          "key": "monto",
+          "label": "Monto",
+          "fmt": "money"
+        },
+        {
+          "key": "estado",
+          "label": "Estado",
+          "fmt": "state"
+        },
+        {
+          "key": "solicitado_en",
+          "label": "Fecha"
+        }
+      ],
+      "rows": [
+        {
+          "id": 2,
+          "cancelacion_id": 10,
+          "pago_id": 267,
+          "monto": 449,
+          "estado": "COMPLETADO",
+          "solicitado_en": "21 oct 2026"
+        },
+        {
+          "id": 3,
+          "cancelacion_id": 9,
+          "pago_id": 259,
+          "monto": 899,
+          "estado": "PENDIENTE",
+          "solicitado_en": "23 oct 2026"
+        }
+      ],
+      "form": [],
+      "readonly": true,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    },
+    "clientes": {
+      "slug": "clientes",
+      "title": "Clientes",
+      "description": "Personas identificadas que pueden recibir recompensas; no confundir con compras como invitado.",
+      "table": "clientes",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "nombre",
+          "label": "Nombre"
+        },
+        {
+          "key": "email",
+          "label": "Correo"
+        },
+        {
+          "key": "telefono",
+          "label": "Teléfono"
+        },
+        {
+          "key": "ventas_semestre",
+          "label": "Ventas semestre"
+        },
+        {
+          "key": "activo",
+          "label": "Estado",
+          "fmt": "state"
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "nombre": "Luis Romero",
+          "email": "luis@example.test",
+          "telefono": "664 000 1001",
+          "ventas_semestre": 7,
+          "activo": "Activo"
+        },
+        {
+          "id": 2,
+          "nombre": "Sofía Morales",
+          "email": "sofia@example.test",
+          "telefono": "664 000 1002",
+          "ventas_semestre": 10,
+          "activo": "Activo"
+        },
+        {
+          "id": 3,
+          "nombre": "Mario López",
+          "email": "mario@example.test",
+          "telefono": "664 000 1003",
+          "ventas_semestre": 4,
+          "activo": "Activo"
+        }
+      ],
+      "form": [
+        {
+          "key": "nombre",
+          "label": "Nombre",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "email",
+          "label": "Correo electrónico",
+          "type": "email",
+          "required": false
+        },
+        {
+          "key": "telefono",
+          "label": "Teléfono",
+          "type": "tel",
+          "required": false
+        },
+        {
+          "key": "activo",
+          "label": "Estado",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Activo",
+            "Inactivo"
+          ]
+        }
+      ],
+      "readonly": false,
+      "caption": "Las ventas del semestre se obtendrán de movimientos_lealtad, no de un campo físico en clientes."
+    },
+    "cupones": {
+      "slug": "cupones",
+      "title": "Cupones",
+      "description": "Públicos, amigos, VIP y lealtad; alcances, canales y vigencia.",
+      "table": "cupones (+ cupon_productos + cupon_categorias + cupon_asignaciones + cupon_usos)",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "codigo",
+          "label": "Código"
+        },
+        {
+          "key": "clase",
+          "label": "Tipo"
+        },
+        {
+          "key": "porcentaje",
+          "label": "Descuento",
+          "fmt": "percent"
+        },
+        {
+          "key": "canal",
+          "label": "Canal"
+        },
+        {
+          "key": "alcance",
+          "label": "Alcance"
+        },
+        {
+          "key": "activo",
+          "label": "Estado",
+          "fmt": "state"
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "codigo": "DROP88",
+          "clase": "PUBLICO",
+          "porcentaje": 10,
+          "canal": "AMBOS",
+          "alcance": "TODOS",
+          "activo": "Activo"
+        },
+        {
+          "id": 2,
+          "codigo": "VIP-88",
+          "clase": "VIP",
+          "porcentaje": 15,
+          "canal": "ONLINE",
+          "alcance": "PRODUCTOS",
+          "activo": "Activo"
+        },
+        {
+          "id": 3,
+          "codigo": "LEALTAD-DEM-01",
+          "clase": "LEALTAD",
+          "porcentaje": 10,
+          "canal": "AMBOS",
+          "alcance": "TODOS",
+          "activo": "Activo"
+        }
+      ],
+      "form": [
+        {
+          "key": "codigo",
+          "label": "Código",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "clase",
+          "label": "Clase",
+          "type": "select",
+          "required": true,
+          "options": [
+            "PUBLICO",
+            "AMIGOS",
+            "VIP",
+            "LEALTAD"
+          ]
+        },
+        {
+          "key": "porcentaje",
+          "label": "Porcentaje",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "canal",
+          "label": "Canal",
+          "type": "select",
+          "required": true,
+          "options": [
+            "FISICA",
+            "ONLINE",
+            "AMBOS"
+          ]
+        },
+        {
+          "key": "alcance",
+          "label": "Alcance",
+          "type": "select",
+          "required": true,
+          "options": [
+            "TODOS",
+            "PRODUCTOS",
+            "CATEGORIAS"
+          ]
+        }
+      ],
+      "readonly": false,
+      "caption": "El cupón por lealtad es personal, de un uso y no se acumula con promociones."
+    },
+    "periodos": {
+      "slug": "periodos",
+      "title": "Semestres de lealtad",
+      "description": "Periodos fijos aprobados para el conteo de compras pagadas.",
+      "table": "periodos_lealtad",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "nombre",
+          "label": "Periodo"
+        },
+        {
+          "key": "inicio",
+          "label": "Inicio"
+        },
+        {
+          "key": "fin_exclusivo",
+          "label": "Fin exclusivo"
+        },
+        {
+          "key": "max_recompensas_cliente",
+          "label": "Máx. cupones"
+        },
+        {
+          "key": "activo",
+          "label": "Estado",
+          "fmt": "state"
+        }
+      ],
+      "rows": [
+        {
+          "id": 2,
+          "nombre": "2026 · Jul–Dic",
+          "inicio": "2026-07-01",
+          "fin_exclusivo": "2027-01-01",
+          "max_recompensas_cliente": 1,
+          "activo": "Activo"
+        },
+        {
+          "id": 1,
+          "nombre": "2026 · Ene–Jun",
+          "inicio": "2026-01-01",
+          "fin_exclusivo": "2026-07-01",
+          "max_recompensas_cliente": 1,
+          "activo": "Inactivo"
+        }
+      ],
+      "form": [],
+      "readonly": true,
+      "caption": "Política: 1 de enero a 30 de junio y 1 de julio a 31 de diciembre. Un cupón de 10 % tras 10 VENTAS pagadas por cliente identificado."
+    },
+    "recompensas": {
+      "slug": "recompensas",
+      "title": "Recompensas",
+      "description": "Cupones de lealtad emitidos al completar 10 ventas pagadas en el semestre.",
+      "table": "recompensas_cliente (+ movimientos_lealtad)",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "cliente",
+          "label": "Cliente"
+        },
+        {
+          "key": "periodo",
+          "label": "Semestre"
+        },
+        {
+          "key": "hito_ventas",
+          "label": "Meta"
+        },
+        {
+          "key": "estado",
+          "label": "Estado",
+          "fmt": "state"
+        },
+        {
+          "key": "cupon",
+          "label": "Cupón"
+        }
+      ],
+      "rows": [
+        {
+          "id": 11,
+          "cliente": "Sofía Morales",
+          "periodo": "Jul–Dic 2026",
+          "hito_ventas": 10,
+          "estado": "EMITIDA",
+          "cupon": "LEALTAD-DEM-01"
+        },
+        {
+          "id": 10,
+          "cliente": "Carlos Mora",
+          "periodo": "Ene–Jun 2026",
+          "hito_ventas": 10,
+          "estado": "CANJEADA",
+          "cupon": "LEALTAD-DEM-00"
+        }
+      ],
+      "form": [],
+      "readonly": true,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    },
+    "resenas": {
+      "slug": "resenas",
+      "title": "Reseñas",
+      "description": "Moderación de opiniones autorizadas tras una entrega verificada.",
+      "table": "resenas",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "cliente",
+          "label": "Cliente"
+        },
+        {
+          "key": "producto",
+          "label": "Producto"
+        },
+        {
+          "key": "estrellas",
+          "label": "Calificación"
+        },
+        {
+          "key": "comentario",
+          "label": "Comentario"
+        },
+        {
+          "key": "visible",
+          "label": "Visibilidad",
+          "fmt": "state"
+        }
+      ],
+      "rows": [
+        {
+          "id": 42,
+          "cliente": "Luis Romero",
+          "producto": "Playera Essential Black",
+          "estrellas": "★★★★★",
+          "comentario": "Muy buen ajuste y calidad.",
+          "visible": "Visible"
+        },
+        {
+          "id": 41,
+          "cliente": "Sofía Morales",
+          "producto": "Hoodie Shadow Oversize",
+          "estrellas": "★★★★☆",
+          "comentario": "Tela cómoda.",
+          "visible": "Visible"
+        },
+        {
+          "id": 40,
+          "cliente": "Carlos Mora",
+          "producto": "Cargo Street",
+          "estrellas": "★★★☆☆",
+          "comentario": "Revisar talla recomendada.",
+          "visible": "Oculta"
+        }
+      ],
+      "form": [],
+      "readonly": true,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    },
+    "gastos": {
+      "slug": "gastos",
+      "title": "Gastos",
+      "description": "Gastos de operación, con categoría, sucursal, monto y comprobante.",
+      "table": "gastos",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "fecha_gasto",
+          "label": "Fecha"
+        },
+        {
+          "key": "descripcion",
+          "label": "Descripción"
+        },
+        {
+          "key": "categoria",
+          "label": "Categoría"
+        },
+        {
+          "key": "sucursal",
+          "label": "Sucursal"
+        },
+        {
+          "key": "importe",
+          "label": "Importe",
+          "fmt": "money"
+        },
+        {
+          "key": "metodo_pago",
+          "label": "Método"
+        }
+      ],
+      "rows": [
+        {
+          "id": 80,
+          "fecha_gasto": "2026-10-22",
+          "descripcion": "Empaques para entregas",
+          "categoria": "Operación",
+          "sucursal": "Tijuana",
+          "importe": 1250,
+          "metodo_pago": "TRANSFERENCIA"
+        },
+        {
+          "id": 81,
+          "fecha_gasto": "2026-10-20",
+          "descripcion": "Fotografía catálogo",
+          "categoria": "Marketing",
+          "sucursal": "Tijuana",
+          "importe": 1800,
+          "metodo_pago": "EFECTIVO"
+        },
+        {
+          "id": 82,
+          "fecha_gasto": "2026-10-18",
+          "descripcion": "Insumos de limpieza",
+          "categoria": "Operación",
+          "sucursal": "Tijuana",
+          "importe": 420,
+          "metodo_pago": "EFECTIVO"
+        }
+      ],
+      "form": [
+        {
+          "key": "fecha_gasto",
+          "label": "Fecha",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "descripcion",
+          "label": "Descripción",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "categoria_id",
+          "label": "Categoría",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Operación",
+            "Marketing",
+            "Servicios"
+          ]
+        },
+        {
+          "key": "sucursal_id",
+          "label": "Sucursal",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Tijuana"
+          ]
+        },
+        {
+          "key": "importe",
+          "label": "Importe",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "metodo_pago",
+          "label": "Método",
+          "type": "select",
+          "required": true,
+          "options": [
+            "EFECTIVO",
+            "TRANSFERENCIA",
+            "OTRO"
+          ]
+        }
+      ],
+      "readonly": false,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    },
+    "gasto-categorias": {
+      "slug": "gasto-categorias",
+      "title": "Categorías de gasto",
+      "description": "Clasificación contable básica para reportes operativos.",
+      "table": "gasto_categorias",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "nombre",
+          "label": "Categoría"
+        },
+        {
+          "key": "activa",
+          "label": "Estado",
+          "fmt": "state"
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "nombre": "Operación",
+          "activa": "Activa"
+        },
+        {
+          "id": 2,
+          "nombre": "Marketing",
+          "activa": "Activa"
+        },
+        {
+          "id": 3,
+          "nombre": "Servicios",
+          "activa": "Activa"
+        }
+      ],
+      "form": [
+        {
+          "key": "nombre",
+          "label": "Nombre",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "activa",
+          "label": "Estado",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Activa",
+            "Inactiva"
+          ]
+        }
+      ],
+      "readonly": false,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    },
+    "usuarios": {
+      "slug": "usuarios",
+      "title": "Usuarios internos",
+      "description": "Gestión de usuarios y sus roles; los clientes pueden tener cuenta web independiente.",
+      "table": "usuarios + usuario_roles",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "nombre",
+          "label": "Nombre"
+        },
+        {
+          "key": "email",
+          "label": "Correo"
+        },
+        {
+          "key": "roles",
+          "label": "Rol asignado"
+        },
+        {
+          "key": "activo",
+          "label": "Estado",
+          "fmt": "state"
+        },
+        {
+          "key": "ultimo_acceso_en",
+          "label": "Último acceso"
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "nombre": "Cuenta propietaria (demo)",
+          "email": "propietario@example.test",
+          "roles": "PROPIETARIO",
+          "activo": "Activo",
+          "ultimo_acceso_en": "23 oct 2026"
+        },
+        {
+          "id": 2,
+          "nombre": "Administración demo",
+          "email": "admin@example.test",
+          "roles": "ADMIN",
+          "activo": "Activo",
+          "ultimo_acceso_en": "23 oct 2026"
+        },
+        {
+          "id": 3,
+          "nombre": "Vendedor demo",
+          "email": "ventas@example.test",
+          "roles": "VENDEDOR",
+          "activo": "Activo",
+          "ultimo_acceso_en": "22 oct 2026"
+        }
+      ],
+      "form": [
+        {
+          "key": "nombre",
+          "label": "Nombre",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "email",
+          "label": "Correo",
+          "type": "email",
+          "required": true
+        },
+        {
+          "key": "roles",
+          "label": "Rol",
+          "type": "select",
+          "required": true,
+          "options": [
+            "ADMIN",
+            "VENDEDOR",
+            "PROPIETARIO"
+          ]
+        },
+        {
+          "key": "activo",
+          "label": "Estado",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Activo",
+            "Inactivo"
+          ]
+        }
+      ],
+      "readonly": false,
+      "caption": "Nunca almacenar contraseñas en texto plano. El esquema utiliza password_hash y relación usuario_roles."
+    },
+    "roles": {
+      "slug": "roles",
+      "title": "Roles",
+      "description": "Los roles del modelo son ROOT, PROPIETARIO, ADMIN, VENDEDOR y CLIENTE.",
+      "table": "roles (+ rol_permisos)",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "codigo",
+          "label": "Código"
+        },
+        {
+          "key": "nombre",
+          "label": "Nombre"
+        },
+        {
+          "key": "permisos",
+          "label": "Permisos demo"
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "codigo": "ROOT",
+          "nombre": "Superadministrador técnico",
+          "permisos": "Todos"
+        },
+        {
+          "id": 2,
+          "codigo": "PROPIETARIO",
+          "nombre": "Propietario",
+          "permisos": "Amplios"
+        },
+        {
+          "id": 3,
+          "codigo": "ADMIN",
+          "nombre": "Administrador",
+          "permisos": "Administrativos"
+        },
+        {
+          "id": 4,
+          "codigo": "VENDEDOR",
+          "nombre": "Vendedor",
+          "permisos": "Operativos"
+        },
+        {
+          "id": 5,
+          "codigo": "CLIENTE",
+          "nombre": "Cliente",
+          "permisos": "Públicos"
+        }
+      ],
+      "form": [],
+      "readonly": true,
+      "caption": "En producción, la matriz rol_permisos determinará acceso efectivo; ocultar enlaces no es suficiente."
+    },
+    "permisos": {
+      "slug": "permisos",
+      "title": "Permisos",
+      "description": "Vista de permisos del sistema, sujeta a autorización por rol en backend.",
+      "table": "permisos (+ rol_permisos)",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "codigo",
+          "label": "Código"
+        },
+        {
+          "key": "descripcion",
+          "label": "Descripción"
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "codigo": "productos.ver",
+          "descripcion": "Consultar productos"
+        },
+        {
+          "id": 2,
+          "codigo": "productos.crear",
+          "descripcion": "Registrar productos"
+        },
+        {
+          "id": 3,
+          "codigo": "inventario.ajustar",
+          "descripcion": "Ajustar existencias"
+        },
+        {
+          "id": 4,
+          "codigo": "pedidos.ver",
+          "descripcion": "Consultar pedidos"
+        },
+        {
+          "id": 5,
+          "codigo": "cancelaciones.autorizar",
+          "descripcion": "Aprobar cancelaciones"
+        },
+        {
+          "id": 6,
+          "codigo": "reportes.ver",
+          "descripcion": "Consultar reportes"
+        }
+      ],
+      "form": [],
+      "readonly": true,
+      "caption": "Códigos ilustrativos para la UI. Verificar contra el catálogo de permisos semilla antes de desarrollar la lógica real."
+    },
+    "configuracion": {
+      "slug": "configuracion",
+      "title": "Configuración",
+      "description": "Parámetros de tienda mantenidos como clave / valor en la base de datos.",
+      "table": "configuracion",
+      "columns": [
+        {
+          "key": "clave",
+          "label": "Clave"
+        },
+        {
+          "key": "valor",
+          "label": "Valor"
+        },
+        {
+          "key": "descripcion",
+          "label": "Descripción"
+        },
+        {
+          "key": "actualizado_en",
+          "label": "Última edición"
+        }
+      ],
+      "rows": [
+        {
+          "clave": "tienda.nombre",
+          "valor": "Shock 88",
+          "descripcion": "Nombre visible de la tienda",
+          "actualizado_en": "23 oct 2026"
+        },
+        {
+          "clave": "tienda.moneda",
+          "valor": "MXN",
+          "descripcion": "Moneda de referencia",
+          "actualizado_en": "23 oct 2026"
+        },
+        {
+          "clave": "demo.contacto",
+          "valor": "Pendiente",
+          "descripcion": "Contacto comercial de prueba",
+          "actualizado_en": "23 oct 2026"
+        }
+      ],
+      "form": [],
+      "readonly": true,
+      "caption": "Los nombres de clave son ejemplos: no se asume que ya existan como registros."
+    },
+    "auditoria": {
+      "slug": "auditoria",
+      "title": "Auditoría",
+      "description": "Bitácora de acciones administrativas para trazabilidad.",
+      "table": "auditoria",
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID"
+        },
+        {
+          "key": "usuario",
+          "label": "Usuario"
+        },
+        {
+          "key": "accion",
+          "label": "Acción"
+        },
+        {
+          "key": "tabla_afectada",
+          "label": "Entidad"
+        },
+        {
+          "key": "registro_id",
+          "label": "ID afectado"
+        },
+        {
+          "key": "creado_en",
+          "label": "Fecha"
+        }
+      ],
+      "rows": [
+        {
+          "id": 980,
+          "usuario": "Administrador demo",
+          "accion": "UPDATE",
+          "tabla_afectada": "productos",
+          "registro_id": "102",
+          "creado_en": "23 oct 2026 · 11:28"
+        },
+        {
+          "id": 979,
+          "usuario": "Vendedor demo",
+          "accion": "INSERT",
+          "tabla_afectada": "pagos",
+          "registro_id": "301",
+          "creado_en": "23 oct 2026 · 10:54"
+        },
+        {
+          "id": 978,
+          "usuario": "Propietario demo",
+          "accion": "APPROVE",
+          "tabla_afectada": "cancelaciones",
+          "registro_id": "10",
+          "creado_en": "22 oct 2026 · 17:12"
+        }
+      ],
+      "form": [],
+      "readonly": true,
+      "caption": "Vista demostrativa de administración; sin escritura en base de datos."
+    }
+  },
+  "dashboard": {
+    "metrics": [
+      {
+        "title": "Ventas del mes",
+        "value": "$128,450",
+        "change": "+12.8 %",
+        "icon": "fa-wallet",
+        "kind": "positive"
+      },
+      {
+        "title": "Pedidos registrados",
+        "value": "248",
+        "change": "+8.2 %",
+        "icon": "fa-bag-shopping",
+        "kind": "positive"
+      },
+      {
+        "title": "Unidades en inventario",
+        "value": "1,846",
+        "change": "12 SKU con stock bajo",
+        "icon": "fa-boxes-stacked",
+        "kind": "warning"
+      },
+      {
+        "title": "Clientes identificados",
+        "value": "386",
+        "change": "+23 nuevos",
+        "icon": "fa-users",
+        "kind": "positive"
+      }
+    ],
+    "revenue": {
+      "labels": [
+        "May",
+        "Jun",
+        "Jul",
+        "Ago",
+        "Sep",
+        "Oct"
+      ],
+      "online": [
+        42000,
+        53500,
+        49200,
+        69000,
+        72000,
+        79500
+      ],
+      "fisica": [
+        26000,
+        31000,
+        38800,
+        30500,
+        41000,
+        48950
+      ]
+    },
+    "channels": {
+      "labels": [
+        "Tienda física",
+        "Tienda online"
+      ],
+      "values": [
+        38,
+        62
+      ]
+    },
+    "categories": {
+      "labels": [
+        "Playeras",
+        "Sudaderas",
+        "Pantalones",
+        "Otros"
+      ],
+      "values": [
+        124,
+        72,
+        39,
+        13
+      ]
+    },
+    "recent": [
+      {
+        "folio": "SH-1029",
+        "cliente": "Luis Romero",
+        "fecha": "Hoy · 11:28",
+        "total": 1348,
+        "estado": "Aprobado"
+      },
+      {
+        "folio": "SH-1028",
+        "cliente": "Invitado",
+        "fecha": "Hoy · 10:42",
+        "total": 799,
+        "estado": "Entregado"
+      },
+      {
+        "folio": "SH-1027",
+        "cliente": "Sofía Morales",
+        "fecha": "Hoy · 09:17",
+        "total": 449,
+        "estado": "Pendiente"
+      },
+      {
+        "folio": "SH-1026",
+        "cliente": "Mario López",
+        "fecha": "Ayer · 17:30",
+        "total": 929,
+        "estado": "Cancelación solicitada"
+      }
+    ],
+    "bestsellers": [
+      {
+        "name": "Playera Essential Black",
+        "sold": 66,
+        "percent": 86
+      },
+      {
+        "name": "Hoodie Shadow Oversize",
+        "sold": 49,
+        "percent": 63
+      },
+      {
+        "name": "Cargo Street Utility",
+        "sold": 32,
+        "percent": 41
+      }
+    ],
+    "activity": [
+      {
+        "icon": "fa-box",
+        "title": "Stock bajo detectado",
+        "sub": "Hoodie Shadow · talla L",
+        "time": "Hace 14 min",
+        "type": "orange"
+      },
+      {
+        "icon": "fa-receipt",
+        "title": "Pedido confirmado",
+        "sub": "SH-1029 · $1,348",
+        "time": "Hace 38 min",
+        "type": "mint"
+      },
+      {
+        "icon": "fa-ticket",
+        "title": "Recompensa emitida",
+        "sub": "Cliente completó 10 ventas pagadas",
+        "time": "Hoy · 09:21",
+        "type": "blue"
+      }
+    ]
+  }
+}
